@@ -2,7 +2,7 @@ const inputFields = document.querySelectorAll('input');
 
 inputFields.forEach(input => {
 
-    if (!input.hasAttribute('data-exp') || !input.hasAttribute('disableOnPress')) {
+    if (!input.hasAttribute('data-exp') || input.hasAttribute('disableOnPress')) {
         return; // Skip inputs without data-exp attribute or disableOnPress attribute
     }
     // Cache the supported character sets by input name to avoid recomputation
